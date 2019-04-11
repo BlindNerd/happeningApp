@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Whats Up
+    link(type='text/css', rel='stylesheet', href='https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css')
+    link(type='text/css', rel='stylesheet', href='https://unpkg.com/leaflet.markercluster@1.0.6/dist/MarkerCluster.css')
+    link(type='text/css', rel='stylesheet', href='https://unpkg.com/leaflet.markercluster@1.0.6/dist/MarkerCluster.Default.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .navigation_div
+      .nav_bar
+        ul
+          li Home 
+          li Signup
+          li Login
+    block content
+    script(src='https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js')
+    script(src='https://unpkg.com/leaflet.markercluster@1.0.6/dist/leaflet.markercluster.js')
+    script(type= 'text/javascript' src='https://cdn.socket.io/socket.io-1.4.0.js')
+    script(type= 'text/javascript' src='/scripts/client.js')

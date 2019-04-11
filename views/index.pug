@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  #map(style='width: 100%; height: 2000px;')
+    .loading_div
+      .loading_gears_div 
+        br 
+        br 
+        br
+        img(src='/images/loadingkGears1.gif', onerror="this.onerror=null; this.src='image.gif'")
+        p.loading_gears_span Loading...
+  #myModal.maps_modal
+    .maps_modal_content
+      span.close ×
+      span.category Event Category
+      .clearfix
+      h4.event_title Title of The Event
+      .event_image
+        img(src='https://via.placeholder.com/600pxx75px.png?text=Visit+WhoIsHostingThis.com')
+      .event_info
+        p Information on the event...
+      .buy_tickets_button
+        button.ticket_button Buy Tickets
+      .loading_gears_modal 
+        br 
+        br 
+        br
+        img(src='/images/loadingkGears1.gif', onerror="this.onerror=null; this.src='image.gif'")
+        p.loading_gears_span Loading...
+  script(type= 'text/javascript' src='/scripts/home.js')
